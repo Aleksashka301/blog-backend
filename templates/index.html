@@ -98,7 +98,7 @@
                     {% else %}
                       <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
                     {% endif %}
-                    
+
                     <ul class="thumb-info">
                       <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
                       <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
@@ -107,7 +107,7 @@
                   </div>
                   <div class="details mt-20">
                     <h3>{{ post.title }}</h3>
-                    <p>{{ post.text }}</p>
+                    <p>{{ post.text|truncatechars:200 }}</p>
                     <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                   </div>
                 </div>
