@@ -39,7 +39,7 @@
                   <div class="blog__slide__content">
                     <h3><a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a></h3>
                     <p>{{ post.published_at }}</p>
-                 </div>
+                  </div>
                 </div>
               </div>
           {% endfor %}
@@ -131,6 +131,7 @@
       </div>
     </section>
     <!--================ End Blog Post Area =================-->
-  </main>
-{% endblock %}
 
+  </main>
+
+{% endblock %}
